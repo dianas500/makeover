@@ -12,6 +12,7 @@ body {
 	 font-family: 'Big Shoulders Display';font-size: 22px;
 	font-size: 1.2rem;
 	min-height: 100%;
+	background: #999999;
 }
 
 .grid-container > * {
@@ -23,39 +24,64 @@ body {
 
 
 
-.grid-container{
+.grid-container {
 	display: grid;
 	grid-gap:10px;
-	grid-template-areas: 
-	"header" 
-	"nav"
-	"main"
-	"sidebar"
-	"footer"
+    grid-template:
+	"h"auto 
+	"n"auto
+	"m" 10rem
+	"a"auto
+	"f"auto;
 }
- header{
- 	grid-area: header;
+ header {
+ 	grid-area: h;
  	background-color: tomato;
  }
 
  nav {
- 	grid-area: nav;
+ 	grid-area: n;
  	background-color: violet;
 
  } 
 
- section{
- 	grid-area: main;
+
+ section {
+ 	grid-area: m;
  	background-color: blue;
 
  }
 
  aside {
- 	 grid-area: sidebar;
+ 	 grid-area: a;
  	 background-color: pink;
  }
-footer{
-	grid-area: footer;
+footer {
+	grid-area: f;
 	background-color: yellow;
 }
+@media (min-width: 640px ) {
+.grid-container {
+	grid-template: 
+	"h h" 4rem
+	"n n" 2rem
+	"m a" auto
+	"f f" 3rem /
+	65% 35%
+	 ;
 
+  }
+}
+@media (min-width:768px ) {
+	.grid-container {
+		grid-template:
+		"h h h" 4rem
+		"n m a" auto
+		"f f f" 3rem / 
+		15% 55% 30%
+		;
+	}
+
+}
+
+	
