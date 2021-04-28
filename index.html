@@ -1,33 +1,226 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" class="h-100">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width-device-width, initial-scale= 1.0">
-	<link href='https://fonts.googleapis.com/css?family=Big Shoulders Display' rel='stylesheet'>
+	<meta name="viewport" 
+  content="width=device-wsidth,initial-scale=1.0">
+  <meta http-equiv="X-UA-compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Bigshot One' rel='stylesheet'>
+	<title>Hotel Museo Maya Inn</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Makeover</title>
 </head>
 <body class="grid-container">
-	<!--<div cLass="grid-container">-->
-	<header>
-	esto es un HEADER significa encabezado.
-   </header>
-	<nav> 
-	esto es un NAVBAR significa barra de navegacion.
-   </nav>
-	<section>
-	esto es una SECTION, como solo hay 1 seria Main significa seccion y main significa principal.
-    </section>
-	<aside> 
-	esto es un ASIDE, tambien conocido como SIDEBEAR significa barra lateral.
-    </aside>
-	
-	<footer>
-	esto es un FOOTER significa pie de pagina.
-    </footer>
-    <!--</div>-->
-	
- 
+  
+	<nav class="  navbar navbar-expand-lg navbar-dark bg-light">
+  <div class="in-flex">
+    <a class="navbar-brand" href="#">
+    	<img src="img/logo.gif">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup ">
+      <div class="navbar-nav " >
+        <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="#">Acerca de</a>
+        <a class="nav-link" href="#">Habitaciones</a>
+        <a class="nav-link " href="#" >Atracciones</a>
+        <a class="nav-link" href="#" >Reservaciones</a>
+        <a class="nav-link" href="#" >Galeria</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row justify-content-center aling-items-center">
+    <div class="col-sm-6 p-5">
+        <p class="text-white "style="letter-spacing: 10px"><b>Chichicastenango</b></p>
+        <h1 class="text-rigth"><span class="display-3">Hotel</span> <br> Mayan Inn</h1>
+    </div>
+    <div class="col-sm-6">
+      <br>
+      <img src="img/image.gif">
+    </div>
+    <div class="card" style="background: white">
+      <div class="row justify-content-center aling-items-center">
+        <div class="col-sm-7 border-rigth">
+          <div class="p-5">
+          <h3> Reservaciones</h3>
+          <div style="padding-left:1px;">
+       <form id="form1" name="form1" method="post" action="" 
+       style="margin:auto;">
+       <table width="90%" border="0" align="center">
+       </tr>
+       <tr>
+       <td width="40%" align="left" valign="top">Nombre</td>
+       <td width="40%" align="left" valign="top">Correo</td>
+       </tr>
+       <tr>
+       <td width="40%" align="left" valign="top"><label>
+       <input type="text" name="nombre" required="required" />
+       </label></td>
+       <td width="40%" align="left" valign="top"><label>
+       <input type="text" name="correo" required="required" />
+       </label></td>
+       </tr>
+       </table>
+     <table width="90%" border="0" align="center" 
+     cellpadding="4" cellspacing="0">
+       <tr>
+       <td width="50%" align="left" valign="top">Ingreso</td>
+       <td width="50%" align="left" valign="top" class="body2">
+        Salida</td>
+       </tr>
+       <tr>
+      <td align="left" valign="top"><label >
+      <select  name="diai" required style="width:43px;">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                     </select>
+      <select name="mesi" required style="width:30%;">
+                 <option>Enero</option>
+                 <option>Febrero</option>
+                 <option>Marzo</option>
+                 </select>
+     <select name="anioi" required style="width:30%;">
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                </select>
+                </label></td>
+     <td align="left" valign="top"><label>
+     <select name="dias" required style="width:43px;">
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               </select>
+                       <select name="mess" required style="width:30%;">
+                      <option>Enero</option>
+                      <option>Febrero</option>
+                      <option>Marzo</option>
+                      </select>
+                      <select name="anios" required style="width:30%;">
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      </select>
+                       </label></td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" valign="top"
+                   style="padding-bottom:10px; padding-top:10px;">
+            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+            <td width="30%" valign="top" class="body2">Adultos<br/>
+                     <td width="30%" valign="top" class="body2">
+                        Ni&ntilde;os<br />
+                      <td  valign="top" width="30%" class="body2">No.de Habitaciones</td>
+                    </tr>
+                    <tr>
+                      <td><label>
+                        <select name="adultos" required>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          </select>
+                            </label></td>
+                      <td><label>
+                        <select name="ninos">
+                          <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            </select>
+                             </label></td>
+                        <td><label>
+                        <select name="nohab" required>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          </select>
+                           </label></td>
+                    </tr>
+                  </table></td>
+                  </tr>
+                <tr>
+               
+                  <td align="left" valign="top"><label>
+                  <input type="image" name="image" src="http://www.mayaninn.com.gt/html/images/index_27e.gif"  />
+                  </label></td>
+                </tr>
+                </table>
+            </div>
+          </form>
+        </div>
+          
+        </div>
+        <div class="col-sm-5">
+          <img src="img/captura.png" alt="" class="img-fluid mx-auto d-block">
+        </div>
+      
+    <tr>
+    <td valign="top" style="padding-top:15px; padding-bottom:15px;">
+  <table width="94%" height="14" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="67%" valign="top">
+    <div style="padding-left:0px; height:35px;"><h2>Bienvenidos</h2></div>
+    <div style="padding-bottom:30px;">
+    <table width="98%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25%" align="center" valign="top"> <br><img src="img/habla.jpg" width="89" height="79" alt="" /></td>
+      <td width="75%" valign="top" class="body">Como un inigualable monumento a la memoria de su fundador Alfred S. Clark (1893 - 1937) y con m&aacute;s de 80 a&ntilde;os, el hotel acoge a sus visitantes dentro de una colecci&oacute;n de piezas de museo, coloniales y artesanales; d&aacute;ndole a cada rinc&oacute;n un toque &uacute;nico e hist&oacute;rico. <br />
+      <br />
+      </td>
+      </tr>
+      </table>
+        <br />
+        <br />
+        <br />
+      <div style="padding-left:0px; height:35px; padding-bottom:2px;">
+          <h2>Restaurantes</h2></div>
+        <table width="98%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25%" align="center" valign="top"><br><img src="http://www.mayaninn.com.gt/html/images/index-menu.gif" width="89" height="79" alt="" /></td>
+      <td width="75%" valign="top" class="body">Ya sea que est&eacute;s de paso por el altiplano u  hosped&aacute;ndote con nosotros, te invitamos a degustar nuestros platillos.<br/> 
+<br />
+Contamos con 3 comedores con vistas a los patios y jardines. Ofrecemos diversas opciones gastron&oacute;micas para desayuno, almuerzo y cena; adem&aacute;s de poderte consentir con servicio a la habitaci&oacute;n.<br /><br />
+ <div class="more">
+      <br />
+      </td>
+      </tr>
+    </table>
+         <br />
+        <br />
+
+
+ <br />
+      <br />
+      </td>
+      </tr>
+    <tr>
+        <td width="67%" valign="top">
+    <div style="padding-left:0px; height:35px;"><h2>Testimoniales</h2></div>
+    <div style="padding-bottom:30px;">
+    <table width="98%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="25%" align="center" valign="top"> <br><img src="http://www.mayaninn.com.gt/html/images/index-test.gif" width="89" height="79" alt="" /></td>
+      <td width="75%" valign="top" class="body">Conoce lo que otros tienen que contar acerca de su experiencia en el hotel. <br />
+      <br />
+      </td>
+      </tr>
+
+
+
+      </div>
+    </div>
+    <!--Bienvenidos-->
+
+
+   
+    
+
 </body>
 </html>

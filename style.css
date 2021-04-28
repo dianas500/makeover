@@ -1,87 +1,63 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
-html {
-	height: 100%;
+
+@font-face{
+font-family: 'Bigshot One';font-size: 40px;	
+
 }
 
 body {
-	 font-family: 'Big Shoulders Display';font-size: 22px;
-	font-size: 1.2rem;
-	min-height: 100%;
-	background: #999999;
-}
-
-.grid-container > * {
-	box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75); 
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
+	margin: 0px;
+background: radial-gradient(at top,#5e2129, red);
 }
 
 
-
-.grid-container {
-	display: grid;
-	grid-gap:10px;
-    grid-template:
-	"h"auto 
-	"n"auto
-	"m" 10rem
-	"a"auto
-	"f"auto;
+.bg-light{
+  background-color: #5e2129 !important;
 }
- header {
- 	grid-area: h;
- 	background-color: tomato;
- }
-
- nav {
- 	grid-area: n;
- 	background-color: violet;
-
- } 
-
-
- section {
- 	grid-area: m;
- 	background-color: blue;
-
- }
-
- aside {
- 	 grid-area: a;
- 	 background-color: pink;
- }
-footer {
-	grid-area: f;
-	background-color: yellow;
-}
-@media (min-width: 640px ) {
-.grid-container {
-	grid-template: 
-	"h h" 4rem
-	"n n" 2rem
-	"m a" auto
-	"f f" 3rem /
-	65% 35%
-	 ;
-
-  }
-}
-@media (min-width:768px ) {
-	.grid-container {
-		grid-template:
-		"h h h" 4rem
-		"n m a" auto
-		"f f f" 3rem / 
-		15% 55% 30%
-		;
-	}
-
+.bg-gradiente{
+ background: linear-gradient( -45deg,red,#5e2129); 
 }
 
+h1,h2,h3,h4.nav-link{
+	font-family: 'Bigshot One';font-size: 40px;
+}
+h1{
+	-webkit-text-stroke:2px #5e2129;
+
+}
+@media (max-width: 900px ) {
+
+     body {
+     	background-color:plum;
+     	 } 
+     	 .container{
+           display: grid;
+           grid-template-columns: repeat(4, 1fr) ;
+           grid-template-rows: 1fr 1fr;
+     	 }
+}
+@media (max-width: 600px ) {
+     body {
+     	background-color:violet;
+     }
+
+      .container {
+     	display: grid;
+       grid-template-columns: repeat(2, 1fr) ;
+	   grid-template-rows:  repeat(4, 1fr) ;
+     }
+	     
+}
+@media (max-width: 300px ) {
+     body {
+     	background-color:tan; 
+     	 }
+     	 .container {
+           display: grid;
+           grid-template-columns:  1fr;
+           grid-template-rows: repeat(8, 1fr) ;
+     	 } 
+}
 	
+
+
